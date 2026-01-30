@@ -41,12 +41,40 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(assets/images/main_3D.jpg);
     background-repeat: no-repeat;
     height: 201px;
+    position: relative;
+}
+
+@keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: 75%;
+    }
+}
+
+@keyframes moveY {
+    from {
+        top: 0;
+    }
+    to {
+        top: 55%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #main_text {
-    float: left;
-    margin: 5%;
-    width: 90%;
+    position: absolute;
+    width: 25%;
+    height: 45%;
     display: block;
     background-color: rgba(255,255,255,0.6);
     padding: 10px;
@@ -67,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
     margin: 0px;
     line-height: 1.2;
+    color: black;
 } 
 
 .card {
@@ -259,10 +288,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
         height: 288px;
     }
 
-    #main_text {
+    /* #main_text {
         float: right;
         margin-top: 7%;
-    }
+    } */
 
     .card {
         border: 0px solid rgba(0,0,0,.125);
@@ -325,10 +354,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
         background-color: rgb(218, 216, 148);
     }
 
-    #main_text {
+    /* #main_text {
         float: right;
         margin-top: 7%;
-    }
+    } */
 
     #main_text h2 {
         color: crimson;
@@ -435,10 +464,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
         height: 500px;
     }
 
-    #main_text {
+    /* #main_text {
         float: right;
         margin-top: 20%;
-    }
+    } */
 
     #main_text h2 {
         color: crimson;

@@ -92,8 +92,20 @@
     </nav>
     </nav>
     <div class="container-fluid">
-      <h1>Hello, world!</h1>
-      <p>Do nulla occaecat minim ex.Labore nisi esse exercitation elit ea. Nulla anim voluptate est laboris laborum duis pariatur irure ex anim minim. Do cillum laborum pariatur eu. Nisi non nulla ex pariatur eu nulla fugiat deserunt sunt consequat aliqua in pariatur nisi. Officia amet cillum nisi cillum magna.</p>
+      <div id="main_3d_image">
+        <!-- class="col-xs-12 col-sm-4" -->
+        <div id="main_text">
+          <h2>Coca Cola Great Britain</h2>
+          <h3>Founded by Dr John S Pemberton</h3>
+          <p>
+            Founded in 1886 by pharmacist Dr John S Pemberton in Atlanta, Georgia, The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands. 
+          </p>
+        </div>
+      </div>
+      <script>
+        let movetext = document.getElementById("main_text");
+        movetext.style.animation = `moveX ${Math.random() * 5 + 2}s linear 0s infinite alternate, moveY ${Math.random() * 5+2}s linear 0s infinite alternate, rotate 2s linear 0s infinite`
+      </script>
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
@@ -103,10 +115,11 @@
             <div class="card-body">
                 <h3 class="card-title">Coca Cola</h3>
                 <p class="card-text">
-                  Coca Cola Great Britain 
-                  Founded in 1886 by pharmacist Dr John S Pemberton in Atlanta, Georgia, The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands. 
+                  History of Coca Cola: 1886-1892
+                  Atlanta Beginnings: It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
+                  Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.
                 </p>
-                <a href="#" class="btn btn-primary">Find Out More...</a>
+                <a href="https://www.coca-cola.com/gb/en" class="btn btn-primary">Find Out More...</a>
             </div>
           </div>  
         </div>
